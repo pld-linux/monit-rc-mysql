@@ -1,5 +1,5 @@
 Summary:	monitrc file for monitoring MySQL database server
-Summary(pl):	Plik monitrc do monitorowania serwera baz danych MySQL
+Summary(pl.UTF-8):   Plik monitrc do monitorowania serwera baz danych MySQL
 Name:		monit-rc-mysql
 Version:	1.3
 Release:	1
@@ -16,7 +16,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 monitrc file for monitoring MySQL database server.
 
-%description -l pl
+%description -l pl.UTF-8
 Plik monitrc do monitorowania serwera baz danych MySQL.
 
 %install
