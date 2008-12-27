@@ -24,6 +24,7 @@ Plik monitrc do monitorowania serwera baz danych MySQL.
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_sysconfdir}/monit
+
 install %{SOURCE0} $RPM_BUILD_ROOT%{_sysconfdir}/monit
 
 %clean
@@ -37,4 +38,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%{_sysconfdir}/monit/*.monitrc
+%config(noreplace) %verify(not md5 mtime size) %{_sysconfdir}/monit/*.monitrc
